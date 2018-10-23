@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
+
 <body>
-  
-  <script src="app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.21.5/system-production.js"></script>
+  <script src="build/app.js"></script>
+  <script>
+    System.import('app')
+    .then(() => console.log("App loaded!"))
+    .catch((err) => console.error(err));
+  </script>
+
 </body>
+
 </html>
