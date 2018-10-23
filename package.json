@@ -1,0 +1,20 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "we are live!",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" "
+  },
+  "author": "groundzero",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.6.1",
+    "lite-server": "^2.4.0",
+    "typescript": "^2.9.2"
+  }
+}
